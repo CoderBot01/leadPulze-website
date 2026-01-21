@@ -4,7 +4,7 @@ export function Logo() {
   return (
     <div className="flex items-center">
       <Image
-        src="/logo.png"      
+        src="/Logo.webp"      
         alt="LeadPulze Logo"
         width={120}
         height={50}
