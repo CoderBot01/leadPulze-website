@@ -151,3 +151,22 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(110deg,
+      hsl(var(--muted)) 25%,
+      hsl(var(--muted) / 0.6) 37%,
+      hsl(var(--muted)) 63%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease infinite;
+}
